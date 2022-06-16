@@ -1,0 +1,30 @@
+<html>
+    <head>
+ 
+    </head>
+    
+        <body style="background-color:powderblue;">
+        
+        <script>
+            function fun()
+            {
+                let reg=/[a-z0-9]+@[a-z]+\.[a-z]{2,3}/
+                let mat=document.getElementById("text").value;
+                if(reg.test(mat))
+                {
+                    document.write("Valid mail")
+                }
+                else{
+                    document.write("Invalid mail")
+                }
+            }
+        </script>
+        <center> 
+            <marquee>
+                <h1>Enter your Email Id</h1>
+            </marquee>
+            <input type="text" id="text">
+            <input type="submit" onclick="fun()"> 
+    </center>
+    </body>
+</html>
