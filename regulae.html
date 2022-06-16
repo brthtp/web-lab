@@ -1,0 +1,30 @@
+<html>
+    <head>
+ 
+    </head>
+    
+        <body style="background-color:powderblue;">
+        
+        <script>
+            function fun()
+            {
+                let reg=/\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])/
+                let mat=document.getElementById("text").value;
+                if(reg.test(mat))
+                {
+                    document.write("Valid date")
+                }
+                else{
+                    document.write("Invalid date")
+                }
+            }
+        </script>
+        <center> 
+            <marquee>
+                <h1>Enter your name and  date of birth</h1>
+            </marquee>
+            <input type="text" id="text">
+            <input type="submit" onclick="fun()"> 
+    </center>
+    </body>
+</html>
